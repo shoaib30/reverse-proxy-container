@@ -1,3 +1,32 @@
-<h1>
-    Home page
-</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reverse Proxy</title>
+        <script>
+            function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("data").innerHTML =
+                this.responseText;
+                }
+            };
+            xhttp.open("GET", "/api/posts", true);
+            xhttp.send();
+            }
+       </script>
+    </head>
+    <body>
+        <h1>
+            Home page
+        </h1>
+        <button type="button" onclick="loadDoc()">Run AJAX</button>
+        <h2>Response: </h2>
+        <div id="data"></div>
+    </body>
+</html>
+
+
+
+
+
