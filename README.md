@@ -6,7 +6,7 @@ To use
 	
 
     git clone https://github.com/shoaib30/reverse-proxy-container.git
- 2. download the dependencies
+2. download the dependencies
  
 
     npm install
