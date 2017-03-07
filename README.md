@@ -9,5 +9,5 @@
 `npm start`
 5. test the endpoint at
 `localhost:3000/api/*`
-*replace the \* with the required path of your custom endpoint*
+*replace the* **asterisk** *with the required path of your custom endpoint*
 
